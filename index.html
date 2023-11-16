@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container scrollx">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="946"
+          height="16"
+          viewBox="0 0 946 16"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M14.4966 11.75C13.1998 13.9918 10.7761 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C10.7761 0.5 13.1998 2.00824 14.4966 4.25H311.503C312.8 2.00824 315.224 0.5 318 0.5C320.776 0.5 323.2 2.00824 324.497 4.25H621.503C622.8 2.00824 625.224 0.5 628 0.5C630.776 0.5 633.2 2.00824 634.497 4.25H931.503C932.8 2.00824 935.224 0.5 938 0.5C942.142 0.5 945.5 3.85786 945.5 8C945.5 12.1421 942.142 15.5 938 15.5C935.224 15.5 932.8 13.9918 931.503 11.75H634.497C633.2 13.9918 630.776 15.5 628 15.5C625.224 15.5 622.8 13.9918 621.503 11.75H324.497C323.2 13.9918 320.776 15.5 318 15.5C315.224 15.5 312.8 13.9918 311.503 11.75H14.4966Z"
+            fill="#A3AAA7"
+          />
+          <mask
+            id="mask0_0_1"
+            style="mask-type: alpha"
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="950"
+            height="16"
+          >
+            <path
+              d="M14.4966 11.75C13.1998 13.9918 10.7761 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C10.7761 0.5 13.1998 2.00824 14.4966 4.25H311.503C312.8 2.00824 315.224 0.5 318 0.5C320.776 0.5 323.2 2.00824 324.497 4.25H621.503C622.8 2.00824 625.224 0.5 628 0.5C630.776 0.5 633.2 2.00824 634.497 4.25H931.503C932.8 2.00824 935.224 0.5 938 0.5C942.142 0.5 945.5 3.85786 945.5 8C945.5 12.1421 942.142 15.5 938 15.5C935.224 15.5 932.8 13.9918 931.503 11.75H634.497C633.2 13.9918 630.776 15.5 628 15.5C625.224 15.5 622.8 13.9918 621.503 11.75H324.497C323.2 13.9918 320.776 15.5 318 15.5C315.224 15.5 312.8 13.9918 311.503 11.75H14.4966Z"
+              fill="#A3AAA7"
+            />
+          </mask>
+          <g mask="url(#mask0_0_1)">
+            <rect class="mask" y="-49" height="99" fill="black" />
+          </g>
+        </svg>
+        <!-- <svg
+          viewBox="0 0 900 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z"
+            fill="#D9D9D9"
+          />
+          <mask
+            id="mask0_0_1"
+            style="mask-type: alpha"
+            maskUnits="userSpaceOnUse"
+            x="0"
+            y="0"
+            width="900"
+            height="10"
+          >
+            <path
+              d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z"
+              fill="#D9D9D9"
+            />
+          </mask>
+          <g mask="url(#mask0_0_1)">
+            <rect class="mask" y="-49" height="99" fill="black" />
+          </g>
+        </svg> -->
+        <section class="sec1 pin">
+          <span>Advanced</span>
+          <h1>Signify Elegance</h1>
+
+          <div class="col">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit
+              sed massa turpis in. Sit praesent arcu leo lectus pellentesque.
+              Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis
+              risus amet urna. Urna egestas lorem.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit
+              sed massa turpis in. Sit praesent arcu leo lectus pellentesque.
+              Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis
+              risus amet urna. Urna egestas lorem.
+            </p>
+          </div>
+        </section>
+        <section class="sec2 pin">
+          <span class="anim">Advanced</span>
+          <h1 class="anim">Signify Elegance</h1>
+
+          <div class="col anim">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit
+              sed massa turpis in. Sit praesent arcu leo lectus pellentesque.
+              Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis
+              risus amet urna. Urna egestas lorem.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit
+              sed massa turpis in. Sit praesent arcu leo lectus pellentesque.
+              Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis
+              risus amet urna. Urna egestas lorem.
+            </p>
+          </div>
+        </section>
+        <section class="sec3 pin">
+          <span class="anim">Advanced</span>
+          <h1 class="anim">Signify Elegance</h1>
+
+          <div class="col anim">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit
+              sed massa turpis in. Sit praesent arcu leo lectus pellentesque.
+              Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis
+              risus amet urna. Urna egestas lorem.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit
+              sed massa turpis in. Sit praesent arcu leo lectus pellentesque.
+              Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis
+              risus amet urna. Urna egestas lorem.
+            </p>
+          </div>
+        </section>
+        v
+        <section class="sec4 pin">
+          <span class="anim">Advanced</span>
+          <h1 class="anim">Signify Elegance</h1>
+
+          <div class="col anim">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit
+              sed massa turpis in. Sit praesent arcu leo lectus pellentesque.
+              Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis
+              risus amet urna. Urna egestas lorem.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Egestas euismod nec sit
+              sed massa turpis in. Sit praesent arcu leo lectus pellentesque.
+              Ornare elit orci morbi volutpat. Ut fermentum lorem morbi quis
+              risus amet urna. Urna egestas lorem.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section style="background-color: lightblue"></section>
+  </body>
+</html>
